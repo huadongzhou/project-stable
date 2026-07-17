@@ -1,0 +1,29 @@
+{
+  "name": "project-stable",
+  "version": "2.1.0",
+  "description": "项目五文档基建技能：初始化/更新/同步（反哺）AGENTS/PRODUCT/DESIGN/TODO/PROMPT 五份根级上下文文档",
+  "author": "huadongzhou",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huadongzhou/project-stable.git"
+  },
+  "homepage": "https://www.skills.sh/huadongzhou/project-stable",
+  "keywords": [
+    "agent-skill",
+    "claude-code",
+    "skills",
+    "vibe-coding",
+    "context-docs"
+  ],
+  "files": [
+    "SKILL.md",
+    "templates"
+  ],
+  "scripts": {
+    "version:patch": "npm version patch -m \"v%s\"",
+    "version:minor": "npm version minor -m \"v%s\"",
+    "version:major": "npm version major -m \"v%s\"",
+    "release": "git push --follow-tags"
+  }
+}

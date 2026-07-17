@@ -54,6 +54,26 @@ project-stable/
 - 所有产出基于可验证的项目事实：解读不到的内容写「待补充：<缺什么、去哪找>」，不编造、不推定。
 - 模板演进走「同步」操作：从真实项目文档提取通用结构反哺模板，项目特性值永不写入模板。
 
+## 版本与更新
+
+版本号记录在 [package.json](package.json)，变更历史见 [CHANGELOG.md](CHANGELOG.md)，git 标签 `vX.Y.Z` 与之对应。
+
+维护者发布新版本（先提交 CHANGELOG 条目，再执行）：
+
+```bash
+npm run version:patch   # 修订：模板措辞、生成提示微调（自动改版本号、提交并打 vX.Y.Z 标签）
+npm run version:minor   # 特性：新增模板章节、新增操作规则
+npm run version:major   # 破坏：模板结构或操作契约不兼容变更
+npm run release         # 推送提交与标签
+```
+
+使用者更新已安装的技能：
+
+```bash
+npx skills update project-stable                # skills CLI 安装的
+git -C ~/.claude/skills/project-stable pull     # git clone 安装的
+```
+
 ## License
 
 [MIT](LICENSE)

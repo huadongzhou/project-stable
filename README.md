@@ -13,7 +13,10 @@
 ## 安装
 
 ```bash
-# 用户级（所有项目可用，推荐——新项目搭建时技能必须先于项目存在）
+# 通过 skills CLI（自动适配 Claude Code / Cursor / Copilot 等 20+ 代理环境）
+npx skills add huadongzhou/project-stable
+
+# 或 git clone 到用户级技能目录（所有项目可用——新项目搭建时技能必须先于项目存在）
 git clone https://github.com/huadongzhou/project-stable.git ~/.claude/skills/project-stable
 
 # 或项目级（仅当前仓库可用）

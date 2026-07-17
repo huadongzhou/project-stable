@@ -1,6 +1,6 @@
 {
   "name": "project-stable",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "项目五文档基建技能：初始化/更新/同步（反哺）AGENTS/PRODUCT/DESIGN/TODO/PROMPT 五份根级上下文文档",
   "author": "huadongzhou",
   "license": "MIT",
